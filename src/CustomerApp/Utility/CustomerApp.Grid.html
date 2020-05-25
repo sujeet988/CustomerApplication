@@ -1,0 +1,26 @@
+<table>
+
+<tr>
+<td *ngFor="let col of gridColumns">
+  {{col.colName}}
+
+</td>
+
+</tr>
+<tr *ngFor="let colobj of gridData">
+
+<td *ngFor="let col of gridColumns">
+
+{{colobj[col.colName]}}
+</td>
+
+<td>
+
+
+    <a (click)="selectGridData(colobj)" [routerLink]="['/Customer/Add']" href="">SelectData</a>
+</td>
+
+
+</tr>
+
+</table>

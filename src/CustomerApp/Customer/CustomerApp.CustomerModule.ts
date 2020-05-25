@@ -5,10 +5,13 @@ import{RouterModule} from '@angular/router';
 import { CustomerComponent } from './CustomerApp.CustomerComponent';
 import { CustomerRoutes } from '../Routing/CustomerApp.CustomerRouting';
 
+import{GridComponent} from '../Utility/CustomerApp.GridComponent';
+
+
 
 @NgModule({
   declarations: [
- CustomerComponent
+ CustomerComponent,GridComponent
   ],
   imports: [
     RouterModule.forChild(CustomerRoutes),CommonModule,FormsModule,ReactiveFormsModule

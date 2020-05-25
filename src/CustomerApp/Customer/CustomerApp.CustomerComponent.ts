@@ -29,6 +29,13 @@ Add(){
 }
 
 
+SelectCustomer(_selected:Customer)
+{
+
+  this.CustomerModel=_selected;
+
+}
+
 //hasError(typeofvalidator:string,controlname:string) :
 //boolean
 //{
